@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    
+   
+		<link rel="stylesheet" href="static/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/css/payemnt.css">
+
+    <title>myproject</title>
+  </head>
+  <body>
+
+
+    <div class="container-fluid">
+      
+        <div class="row justify-content-center">
+         
+           
+            <div class=" col-lg-6 col-md-8">
+                <div class="card p-3">
+                    <!-- <i class="fa fa-chevron-left" aria-hidden="true" style="color: #ddd; font-size: 20px;"></i> -->
+                   <a href="index.html"><i class="fa fa-angle-left "style="color: #ddd; font-size: 30px;" aria-hidden="true"></i></a> 
+
+
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h2 class="heading text-center">الية الدفع</h2>
+                        </div>
+                    </div>
+                    <form onsubmit="event.preventDefault()" class="form-card">
+                        <div class="row justify-content-center mb-4 radio-group">
+                            <div class="col-sm-3 col-5">
+                                <div class='radio selected mx-auto' data-value="dk"> <img class="fit-image" src="img/pay1.jpg" width="105px" height="55px"> </div>
+                            </div>
+                            <div class="col-sm-3 col-5">
+                                <div class='radio mx-auto' data-value="visa"> <img class="fit-image" src="img/pay2.jpg" width="105px" height="55px"> </div>
+                            </div>
+                            <div class="col-sm-3 col-5">
+                                <div class='radio mx-auto' data-value="master"> <img class="fit-image" src="img/pay3.jpg" width="105px" height="55px"> </div>
+                            </div>
+                            <div class="col-sm-3 col-5">
+                                <div class='radio mx-auto' data-value="paypal"> <img class="fit-image" src="img/pay4.jpg" width="105px" height="55px"> </div>
+                            </div> <br>
+                        </div>
+                        <div class="row justify-content-center form-group">
+                            <div class="col-12 px-auto">
+                                <div class="custom-control custom-radio custom-control-inline"> <input id="customRadioInline1" type="radio" name="customRadioInline1" class="custom-control-input" checked="true"> <label for="customRadioInline1" class="custom-control-label label-radio">Private</label> </div>
+                                <div class="custom-control custom-radio custom-control-inline"> <input id="customRadioInline2" type="radio" name="customRadioInline1" class="custom-control-input"> <label for="customRadioInline2" class="custom-control-label label-radio">Business</label> </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="input-group"> <input type="text" name="Name" placeholder="John Doe"> <label>Name</label> </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="input-group"> <input type="text" id="cr_no" name="card-no" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19"> <label>Card Number</label> </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group"> <input type="text" id="exp" name="expdate" placeholder="MM/YY" minlength="5" maxlength="5"> <label>Expiry Date</label> </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group"> <input type="password" name="cvv" placeholder="&#9679;&#9679;&#9679;" minlength="3" maxlength="3"> <label>CVV</label> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-12">
+                              
+                                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                                 <input type="submit" value="Pay" class="btn btn-pay" onclick="myalertt()"></div> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="java/java.js"></script>
+
+
+<script>
+
+    window.onscroll = function(){
+    scrollFunction();
+    };
+    function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+    document.getElementById("btnScroll").style.display = "block";
+    
+    }else{
+    document.getElementById("btnScroll").style.display = "none";
+    }
+    } 
+    
+    function toUp(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop=0;
+    }
+    </script>
+
+
+
+  </body>
+</html>
