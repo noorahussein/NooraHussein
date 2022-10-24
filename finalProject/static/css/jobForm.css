@@ -19,6 +19,7 @@
   }
  
   body {
+    direction: rtl;
     font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -84,6 +85,7 @@
     align-items: flex-start;
     padding: 24px 55px;
     border-bottom: 1px solid #e5e5e5;
+   
   }
   
   .form-row .name {
@@ -92,6 +94,8 @@
     font-size: 15px;
     font-weight: 700;
     margin-top: 11px;
+  
+    
   }
   
   .form-row .value {

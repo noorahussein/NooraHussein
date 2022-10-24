@@ -86,7 +86,7 @@ function validation1(){
 // validation form for material.html
 
 function validation2(){
-    if(document.form2.first_name.value==""){
+    if(document.form2.full_name.value==""){
         swal( "تنبيه","رجئ ادخال الاسم", "error");
     }
     else if(document.form2.Phone.value==""){
@@ -117,7 +117,7 @@ function validation3(){
     else if(document.form3.email1.value==""){
         swal( "تنبيه","  يرجئ ادخال البريد الالكتروني","error"); 
     }
-    else if(document.form3.job-adress.value==""){
+    else if(document.form3.adressjob.value==""){
         swal( "تنبيه","  يرجئ ادخال العنوان الوضيفي","error"); 
     }
     
